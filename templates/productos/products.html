@@ -10,7 +10,7 @@
         {%for producto in productos%}
             <div class="card" style="width: 18rem;">
                 {%if producto.imagen%}
-                <img style="width: 300px; height: 300px;" src="{{ producto.imagen.url }}" class="img-fluid " alt="{{object.name}}">
+                <img style="max-height: 350px;" src="{{ producto.imagen.url }}" class="img-fluid " alt="{{object.name}}">
                 {%endif%}
                 <div class="card-body">
                     <h5 class="card-title">{{producto.name}}</h5>
